@@ -27,7 +27,6 @@ code.visual-block {
   text-align: center;
   border-radius: 12px;
 }
-
 #ani-gif-preview #play-button {
   clear: both;
   height: 40px;
@@ -47,11 +46,9 @@ code.visual-block {
     top: 0;
   }
 }
-
 #rotateContainer {
   display: none;
 }
-
 @media screen and (orientation: portrait) and (max-device-width: 900px) {
   #rotateContainer {
     display: block;
@@ -70,12 +67,10 @@ code.visual-block {
   background: #fff;
   border: 1px solid #000;
 }
-
 .hide_toolbar_helper em {
   font-size: 70%;
   font-family: inherit;
 }
-
 .hide_toolbar_helper p {
   font-size: 16px;
   margin-bottom: 0;
@@ -130,20 +125,16 @@ block to be on top of the toolbox. The toolbox has a z-index of 70.
   0% {
     transform: rotate(0deg);
   }
-
   25% {
     transform: rotate(-20deg);
   }
-
   75% {
     transform: rotate(20deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
-
 .animate-hint {
   animation-name: wiggle;
   animation-duration: 200ms;
@@ -173,7 +164,6 @@ h2 {
 a {
   color: #0596ce;
 }
-
 a:hover {
   color: #0596ce;
   background: none;
@@ -213,7 +203,6 @@ html[dir=rtl] #visualizationColumn {
   position: absolute;
   bottom: 0;
 }
-
 #visualizationColumn.pin_bottom #belowVisualization {
   position: absolute;
   overflow: auto;
@@ -327,7 +316,6 @@ div.droplet-palette-group-header-selected.orange {
   font-size: small;
   color: white;
 }
-
 @media screen and (max-device-width: 540px) {
   #show-code-button {
     display: none;
@@ -348,7 +336,7 @@ button.arrow {
   display: none;
 }
 
-button.arrow>img {
+button.arrow > img {
   opacity: 1;
   vertical-align: text-bottom;
 }
@@ -368,20 +356,16 @@ button.arrow:disabled {
   vertical-align: top;
   -webkit-touch-callout: none;
 }
-
 #soft-buttons.soft-buttons-compact {
   margin: 0;
 }
-
 #soft-buttons.soft-buttons-compact button {
   margin: 0;
   margin-inline-end: 4px;
 }
-
 #soft-buttons :last-child {
   margin-inline-end: 0;
 }
-
 @supports not (gap: 0 9px) {
   #soft-buttons {
     padding-inline-end: 9px;
@@ -510,17 +494,14 @@ html[dir=rtl] .editor-column {
 html[dir=rtl] #codeTextbox .droplet-wrapper-div {
   left: 0 !important;
 }
-
 html[dir=rtl] #codeTextbox .ace_editor {
   left: 0 !important;
 }
-
 html[dir=rtl] #codeTextbox .droplet-palette-wrapper {
   right: 0 !important;
   left: unset !important;
   z-index: 1;
 }
-
 html[dir=rtl] #codeTextbox .droplet-palette-header,
 html[dir=rtl] #codeTextbox .droplet-palette-scroller {
   border-left: 2px solid #ddd;
@@ -559,7 +540,6 @@ html[dir=rtl] div#visualizationResizeBar {
   stroke-width: 1;
   cursor: default;
 }
-
 html[dir=RTL] .karel-counter-text {
   text-anchor: start;
 }
@@ -570,25 +550,23 @@ html[dir=RTL] .karel-counter-text {
 }
 
 /* Shrink the visualization area on small displays. */
-#visualization.responsive>* {
+#visualization.responsive > * {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-
-html[dir=RTL] #visualization.responsive>* {
+html[dir=RTL] #visualization.responsive > * {
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
 
-#studio-dpad-container.responsive>* {
+#studio-dpad-container.responsive > * {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-
-html[dir=RTL] #studio-dpad-container.responsive>* {
+html[dir=RTL] #studio-dpad-container.responsive > * {
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
@@ -601,8 +579,7 @@ html[dir=RTL] #studio-dpad-container.responsive>* {
   position: relative;
 }
 
-@media screen and (min-width: 1101px) and (max-width: 1150px),
-screen and (min-height: 801px) and (max-height: 900px) {
+@media screen and (min-width: 1101px) and (max-width: 1150px), screen and (min-height: 801px) and (max-height: 900px) {
   #visualization.responsive {
     max-height: 350px;
     max-width: 350px;
@@ -637,13 +614,13 @@ screen and (min-height: 801px) and (max-height: 900px) {
     right: 350px;
   }
 
-  #visualization.responsive>* {
+  #visualization.responsive > * {
     -webkit-transform: scale(0.875);
     -ms-transform: scale(0.875);
     transform: scale(0.875);
   }
 
-  #studio-dpad-container.responsive>* {
+  #studio-dpad-container.responsive > * {
     -webkit-transform: scale(0.875);
     -ms-transform: scale(0.875);
     transform: scale(0.875);
@@ -654,9 +631,7 @@ screen and (min-height: 801px) and (max-height: 900px) {
     stroke-width: 1.2px;
   }
 }
-
-@media screen and (min-width: 1051px) and (max-width: 1100px),
-screen and (min-height: 701px) and (max-height: 800px) {
+@media screen and (min-width: 1051px) and (max-width: 1100px), screen and (min-height: 701px) and (max-height: 800px) {
   #visualization.responsive {
     max-height: 300px;
     max-width: 300px;
@@ -691,13 +666,13 @@ screen and (min-height: 701px) and (max-height: 800px) {
     right: 300px;
   }
 
-  #visualization.responsive>* {
+  #visualization.responsive > * {
     -webkit-transform: scale(0.75);
     -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
 
-  #studio-dpad-container.responsive>* {
+  #studio-dpad-container.responsive > * {
     -webkit-transform: scale(0.75);
     -ms-transform: scale(0.75);
     transform: scale(0.75);
@@ -708,9 +683,7 @@ screen and (min-height: 701px) and (max-height: 800px) {
     stroke-width: 1.4px;
   }
 }
-
-@media screen and (min-width: 1001px) and (max-width: 1050px),
-screen and (min-height: 601px) and (max-height: 700px) {
+@media screen and (min-width: 1001px) and (max-width: 1050px), screen and (min-height: 601px) and (max-height: 700px) {
   #visualization.responsive {
     max-height: 250px;
     max-width: 250px;
@@ -745,13 +718,13 @@ screen and (min-height: 601px) and (max-height: 700px) {
     right: 250px;
   }
 
-  #visualization.responsive>* {
+  #visualization.responsive > * {
     -webkit-transform: scale(0.625);
     -ms-transform: scale(0.625);
     transform: scale(0.625);
   }
 
-  #studio-dpad-container.responsive>* {
+  #studio-dpad-container.responsive > * {
     -webkit-transform: scale(0.625);
     -ms-transform: scale(0.625);
     transform: scale(0.625);
@@ -762,9 +735,7 @@ screen and (min-height: 601px) and (max-height: 700px) {
     stroke-width: 1.6px;
   }
 }
-
-@media screen and (max-width: 1000px),
-screen and (max-height: 600px) {
+@media screen and (max-width: 1000px), screen and (max-height: 600px) {
   #visualization.responsive {
     max-height: 200px;
     max-width: 200px;
@@ -799,13 +770,13 @@ screen and (max-height: 600px) {
     right: 200px;
   }
 
-  #visualization.responsive>* {
+  #visualization.responsive > * {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5);
   }
 
-  #studio-dpad-container.responsive>* {
+  #studio-dpad-container.responsive > * {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5);
@@ -819,7 +790,6 @@ screen and (max-height: 600px) {
   #soft-buttons {
     margin: 5px 0 0 0;
   }
-
   #soft-buttons button {
     margin: 0 4px 0 0;
   }
@@ -828,7 +798,6 @@ screen and (max-height: 600px) {
     float: left;
   }
 }
-
 /* Buttons */
 button,
 label.img-upload {
@@ -861,7 +830,7 @@ html[dir=RTL] button.launch {
   text-align: right;
 }
 
-button.launch>img {
+button.launch > img {
   opacity: 1;
   vertical-align: text-bottom;
 }
@@ -874,23 +843,19 @@ button.blocklyLaunch {
   /* Can't use "text-align: start" due to IE. */
   text-align: left;
 }
-
 button.blocklyLaunch.hide {
   display: none;
 }
-
 @media screen and (min-width: 1051px) {
   button.blocklyLaunch {
     min-width: 111px;
   }
 }
-
 button.blocklyLaunch img {
   float: left;
   margin-top: 0;
   margin-left: 6px;
 }
-
 button.blocklyLaunch div {
   text-align: left;
   margin-top: 3px;
@@ -899,35 +864,29 @@ button.blocklyLaunch div {
   padding: 0;
   margin-left: 6px;
 }
-
 @media screen and (min-width: 1051px) {
   button.blocklyLaunch div {
     min-width: 45px;
   }
 }
-
 html[dir=RTL] button.blocklyLaunch {
   margin-right: 0;
 }
-
 button.blocklyLaunch#resetButton {
   border: 1px solid #9660BF;
   background-color: #9660BF;
 }
-
 button.blocklyLaunch#resetButton:hover {
   background-color: #6F488E;
   border-color: #6F488E;
   box-shadow: none;
 }
-
 button.blocklyLaunch.hideText {
   width: 42px;
   height: 42px;
   min-width: 0;
   padding: 7px;
 }
-
 button.blocklyLaunch.hideText img {
   margin-left: 2px;
   margin-top: -2px;
@@ -945,7 +904,7 @@ button.share:focus {
   outline-style: none;
 }
 
-button:hover>img {
+button:hover > img {
   opacity: 1;
 }
 
@@ -964,14 +923,13 @@ button:disabled {
   background-color: #c7c7c7;
   box-shadow: none;
 }
-
 button.disabled:hover,
 button[disabled=disabled]:hover,
 button:disabled:hover {
   box-shadow: none;
 }
 
-button.disabled:hover>img {
+button.disabled:hover > img {
   opacity: 0.6;
 }
 
@@ -998,15 +956,12 @@ input[type=radio] {
     min-width: 0;
   }
 }
-
 #learn h1 {
   margin: 20px 0 0 0;
 }
-
 #learn img {
   margin-bottom: 5px;
 }
-
 #learn a {
   display: block;
 }
@@ -1137,51 +1092,41 @@ input[type=radio] {
 #puzzleRatingButtons hr {
   border-top: 2px solid #ccc;
 }
-
 #puzzleRatingButtons p {
   float: left;
   font-size: 16px;
   color: #949ca2;
   margin-right: 10px;
 }
-
 html[dir=rtl] #puzzleRatingButtons p {
   float: right;
   margin-right: 0;
   margin-left: 10px;
 }
-
 #puzzleRatingButtons svg {
   pointer-events: none;
 }
-
 #puzzleRatingButtons .puzzle-rating-btn {
   fill: #949ca2;
   padding: 0 5px;
   cursor: pointer;
   display: inline-block;
 }
-
 #puzzleRatingButtons .puzzle-rating-btn#like:hover {
   fill: #333;
 }
-
 #puzzleRatingButtons .puzzle-rating-btn#like.enabled {
   fill: #ff3014;
 }
-
 #puzzleRatingButtons .puzzle-rating-btn#like.enabled:hover {
   fill: #d62911;
 }
-
 #puzzleRatingButtons .puzzle-rating-btn#dislike:hover {
   fill: #4d4d4d;
 }
-
 #puzzleRatingButtons .puzzle-rating-btn#dislike.enabled {
   fill: #0094ca;
 }
-
 #puzzleRatingButtons .puzzle-rating-btn#dislike.enabled:hover {
   fill: #00647f;
 }
@@ -1207,15 +1152,12 @@ html[dir=rtl] #puzzleRatingButtons p {
   height: auto;
   /* authored hints */
 }
-
 .prompt-icon-cell.authored_hints {
   width: 80px;
 }
-
 .prompt-icon-cell.authored_hints #prompt-icon {
   padding-top: 20px;
 }
-
 .prompt-icon-cell.authored_hints #lightbulb {
   position: absolute;
   left: 40px;
@@ -1225,7 +1167,6 @@ html[dir=RTL] .prompt-icon-cell {
   padding-right: 0;
   padding-left: 10px;
 }
-
 html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   right: 40px;
   left: auto;
@@ -1236,7 +1177,6 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   padding: 10px 10px 0 10px;
   color: #5b6770;
 }
-
 .qtip.cdo-qtips.qtip-authored-hint .qtip-content h3 {
   margin-top: 0;
   font-family: "Gotham 7r", sans-serif;
@@ -1261,21 +1201,17 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   font-size: 18px;
   line-height: 20px;
 }
-
 .authored-hints #hint-button {
   margin-left: 35px;
 }
-
 .authored-hints ol {
   counter-reset: list;
   margin: 0 0 35px 35px;
 }
-
 .authored-hints ol li {
   list-style: none;
   position: relative;
 }
-
 .authored-hints ol li:before {
   content: counter(list, decimal) ") ";
   counter-increment: list;
@@ -1292,28 +1228,22 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   color: white;
   /* We don't want some of these styles to affect modal content. */
 }
-
 .workspace-header .workspace-header-clickable:hover {
   cursor: pointer;
   color: #ffb81d;
 }
-
 .workspace-header span {
   line-height: 30px;
 }
-
 .workspace-header .fa {
   font-size: 18px;
 }
-
 .workspace-header .ml-modal span {
   line-height: 12px;
 }
-
 .workspace-header .ml-modal .fa {
   font-size: 12px;
 }
-
 .workspace-header.is-running {
   background-color: #cfc9de;
   color: #4d575f;
@@ -1332,16 +1262,13 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   border-radius: 4px;
   font-family: "Gotham 5r", sans-serif;
 }
-
 .workspace-header-button:hover {
   background-color: #0094ca;
 }
-
 .workspace-header-button span {
   padding: 0 12px;
   line-height: 24px;
 }
-
 .workspace-header-button .fa {
   line-height: 24px;
   padding-right: 8px;
@@ -1372,14 +1299,12 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   color: #cfc9de;
   cursor: pointer;
 }
-
 #headers #show-toolbox-icon:hover.fa,
 #headers #hide-toolbox-icon:hover.fa,
 .purple-header #show-toolbox-icon:hover.fa,
 .purple-header #hide-toolbox-icon:hover.fa {
   color: #fff;
 }
-
 #headers #hide-toolbox-icon,
 .purple-header #hide-toolbox-icon {
   -moz-transform: scale(-1, 1);
@@ -1388,14 +1313,12 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
-
 #headers #toolbox-header,
 .purple-header #toolbox-header {
   width: 270px;
   border-right: 1px solid gray;
   float: left;
 }
-
 #headers #show-toolbox-header,
 .purple-header #show-toolbox-header {
   border: 0;
@@ -1403,30 +1326,25 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   padding: 0 10px;
   cursor: pointer;
 }
-
-#headers #show-toolbox-header>span,
-.purple-header #show-toolbox-header>span {
+#headers #show-toolbox-header > span,
+.purple-header #show-toolbox-header > span {
   margin: auto auto auto 18px;
 }
-
 #headers #blockCounter,
 #headers #blockUsed,
 .purple-header #blockCounter,
 .purple-header #blockUsed {
   display: inline-block;
 }
-
 #headers #clear-puzzle-header:hover,
 .purple-header #clear-puzzle-header:hover {
   background-color: #E5311A;
   color: #FFFFFF;
 }
-
 #headers .block-counter-overflow,
 .purple-header .block-counter-overflow {
   color: #ffb81d;
 }
-
 #headers.is-running .block-counter-overflow,
 .purple-header.is-running .block-counter-overflow {
   color: #ff8600;
@@ -1435,13 +1353,11 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
 #headers[dir=rtl] div {
   margin-right: 0;
 }
-
 #headers[dir=rtl] #show-toolbox-icon,
 #headers[dir=rtl] #hide-toolbox-icon {
   left: auto;
   right: 8px;
 }
-
 #headers[dir=rtl] #show-toolbox-icon {
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
@@ -1449,7 +1365,6 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
-
 #headers[dir=rtl] #hide-toolbox-icon {
   -moz-transform: none;
   -webkit-transform: none;
@@ -1457,28 +1372,23 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   -ms-transform: none;
   transform: none;
 }
-
 #headers[dir=rtl] #toolbox-header {
   border-right: 0;
   border-left: 1px solid gray;
   float: right;
 }
-
 #headers[dir=rtl] #show-toolbox-header {
   float: right;
 }
-
 #headers[dir=rtl] .workspace-header-button {
   margin-left: 3px;
   margin-right: 0;
   float: left;
 }
-
 #headers[dir=rtl] .workspace-header-button .fa {
   padding-right: 0;
   padding-left: 8px;
 }
-
 #headers[dir=rtl] .workspace-header-button .blocks-glyph {
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
@@ -1488,7 +1398,6 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   padding-right: 0;
   padding-left: 8px;
 }
-
 #headers[dir=rtl] .show-toolbox-label {
   margin-right: 20px;
 }
@@ -1497,24 +1406,19 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   width: 700px;
   margin-left: -350px;
 }
-
 #showVersionsModal h1 {
   border-bottom: solid 1px;
 }
-
 #showVersionsModal p {
   font-size: 14px;
   margin: 0;
 }
-
 #showVersionsModal td {
   vertical-align: middle;
 }
-
 #showVersionsModal tr.highlight {
   background-color: #ebe8f1;
 }
-
 #showVersionsModal .template-level-warning {
   font-family: "Gotham 7r", sans-serif;
   color: #c00;
@@ -1537,23 +1441,19 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
 .blocklyRectangularDropdownMenu {
   border-color: rgb(84, 84, 84) !important;
 }
-
 .blocklyRectangularDropdownMenu .goog-menuitem-highlight,
 .blocklyRectangularDropdownMenu .goog-menuitem-hover {
   background-color: rgba(255, 255, 255, 0.35);
 }
-
 .blocklyRectangularDropdownMenu.blocklyGridDropdownMenu {
   background-color: white;
   padding-top: 5px !important;
 }
-
 .blocklyRectangularDropdownMenu.blocklyGridDropdownMenu .goog-menuitem {
   display: inline-block;
   margin-left: 4px;
   margin-top: 4px;
 }
-
 .blocklyRectangularDropdownMenu.blocklyGridDropdownMenu .goog-menuitem-highlight,
 .blocklyRectangularDropdownMenu.blocklyGridDropdownMenu .goog-menuitem-hover {
   margin: -4px -4px 0 0 !important;
@@ -1563,15 +1463,12 @@ html[dir=RTL] .prompt-icon-cell.authored_hints #lightbulb {
   color: #292F36;
   font-family: "Gotham 5r", sans-serif;
 }
-
 .modal-content .show-code .generated-code-container {
   margin: 25px 10px 25px -80px;
 }
-
 html[dir=rtl] .modal-content .show-code .generated-code-container {
   margin: 25px -80px 25px 10px;
 }
-
 .modal-content.no-modal-icon .show-code .generated-code-container {
   margin-left: 0;
 }
@@ -1579,33 +1476,27 @@ html[dir=rtl] .modal-content .show-code .generated-code-container {
 .generated-code-container {
   margin-top: 10px;
 }
-
 html[dir=rtl] .generated-code-container .generatedCodeMessage {
   text-align: right;
 }
-
 .generated-code-container .generatedCodeMessage p {
   font-size: 14px;
   line-height: inherit;
   color: #292F36;
   margin-bottom: 10px;
 }
-
 .generated-code-container .generatedCodeMessage p.caption-text {
   font-family: "Gotham 5r", sans-serif;
 }
-
 .generated-code-container .generatedCodeMessage p a {
   font-family: "Gotham 4r", sans-serif;
   font-weight: normal;
   color: #9660BF;
   text-decoration: underline;
 }
-
 .generated-code-container .generatedCodeMessage p a:hover {
   color: #6F488E;
 }
-
 .generated-code-container .generatedCode {
   font-size: 14px;
   overflow: scroll;
@@ -1699,12 +1590,10 @@ html[dir=rtl] .generated-code-container .generatedCodeMessage {
 .hide-source #visualization {
   display: inline-block;
 }
-
 .hide-source #belowVisualization {
   display: inline-block;
   vertical-align: top;
 }
-
 .hide-source #bubble {
   display: none;
 }
@@ -1715,7 +1604,6 @@ html[dir=rtl] .generated-code-container .generatedCodeMessage {
   font-size: 18px;
   color: #5b6770;
 }
-
 #sharing .feedback-image {
   width: 180px;
   height: 180px;
@@ -1724,38 +1612,30 @@ html[dir=rtl] .generated-code-container .generatedCodeMessage {
   border: #c6cacd;
   border-style: solid;
 }
-
 html[dir=rtl] #sharing .feedback-image {
   float: right;
 }
-
 #sharing div {
   margin: 5px 0;
 }
-
 #sharing div.sharing-content {
   margin-left: 195px;
   margin-right: 25px;
 }
-
 #sharing div.sharing-content.no-image {
   margin-left: 0;
 }
-
 html[dir=rtl] #sharing div.sharing-content.no-image {
   margin-right: 0;
 }
-
 html[dir=rtl] #sharing div.sharing-content {
   margin-right: 195px;
   margin-left: 25px;
 }
-
 #sharing label {
   margin-top: 15px;
   font-size: 16px;
 }
-
 #sharing .social-buttons a,
 #sharing .social-buttons a:hover,
 #sharing .social-buttons a:link,
@@ -1764,14 +1644,12 @@ html[dir=rtl] #sharing div.sharing-content {
   text-decoration: none;
   color: white;
 }
-
 html[dir=rtl] #sharing .social-buttons {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
-
 #sharing button {
   background-color: #7665a0;
   color: white;
@@ -1780,68 +1658,53 @@ html[dir=rtl] #sharing .social-buttons {
   text-align: center;
   margin: 2px 0;
 }
-
-#sharing button .disabled,
-#sharing button[disabled=disabled],
-#sharing button:disabled {
+#sharing button .disabled, #sharing button[disabled=disabled], #sharing button:disabled {
   border: 1px solid #7665a0;
   background-color: #c6cacd;
   box-shadow: none;
 }
-
 #sharing #send-to-phone {
   clear: both;
 }
-
 #sharing #send-to-phone-left {
   float: left;
   width: 65%;
   padding-right: 20px;
   box-sizing: border-box;
 }
-
 #sharing #send-to-phone-right {
   float: left;
   width: 35%;
   margin-bottom: 0;
 }
-
 #sharing #send-to-phone-qr-code {
   margin-bottom: 0;
 }
-
 #sharing button.saved-to-gallery {
   font-family: "Gotham 4i", sans-serif;
 }
-
 #sharing #sharing-input-container {
   overflow: hidden;
 }
-
 #sharing #sharing-input {
   margin: 0;
   width: calc(100% - 70px);
   padding: 10px;
   cursor: text;
 }
-
 #sharing #sharing-dialog-copy-button {
   margin-top: 1px;
   box-sizing: border-box;
 }
-
 #sharing .sharing-dialog-copy-button-shared {
   background-color: #a69bc1;
 }
-
 #sharing #copy-button {
   max-width: 100px;
 }
-
 #sharing #sharing-phone i.fa {
   font-size: 24px;
 }
-
 #sharing input#phone {
   height: 30px;
   padding: 5px;
@@ -1850,7 +1713,6 @@ html[dir=rtl] #sharing .social-buttons {
   width: 10em;
   font-family: sans-serif;
 }
-
 #sharing div#phone-charges {
   font-size: 10px;
   margin-top: 0;
@@ -1901,7 +1763,7 @@ body.readonly #codeWorkspace {
   border: none;
 }
 
-body.readonly #codeWorkspace>svg {
+body.readonly #codeWorkspace > svg {
   background-color: transparent;
   border: none;
 }
@@ -1917,18 +1779,15 @@ body.readonly.embed-block #codeWorkspace .userHidden {
   float: right;
 }
 
-.tooltip-example-link>a:hover,
-.tooltip-example-link>a:link,
-.tooltip-example-link>a:active,
-.tooltip-example-link>a:visited,
-.tooltip-choose-link>a:hover,
-.tooltip-choose-link>a:link,
-.tooltip-choose-link>a:active,
-.tooltip-choose-link>a:visited,
-.tooltip-code-link>a:hover,
-.tooltip-code-link>a:link,
-.tooltip-code-link>a:active,
-.tooltip-code-link>a:visited {
+.tooltip-example-link > a:hover, .tooltip-example-link > a:link, .tooltip-example-link > a:active, .tooltip-example-link > a:visited,
+.tooltip-choose-link > a:hover,
+.tooltip-choose-link > a:link,
+.tooltip-choose-link > a:active,
+.tooltip-choose-link > a:visited,
+.tooltip-code-link > a:hover,
+.tooltip-code-link > a:link,
+.tooltip-code-link > a:active,
+.tooltip-code-link > a:visited {
   border-bottom: 3px solid #ffb81d;
   color: white;
   font-family: "Gotham 5r", sans-serif;
@@ -2005,7 +1864,6 @@ body.readonly.embed-block #codeWorkspace .userHidden {
     flex: 1 1 auto;
   }
 }
-
 a.WireframeButtons_button {
   background-color: #7665a0;
   border-radius: 5px;
@@ -2052,7 +1910,6 @@ div.WireframeButtons_active {
     height: 602px !important;
     background-size: 402px 602px;
   }
-
   .legacy-share-view div#visualizationColumn.wireframeShare div#phoneFrameScreen {
     border-width: 1px;
     border-color: gray;
@@ -2060,36 +1917,28 @@ div.WireframeButtons_active {
     left: 0;
   }
 }
-
 .legacy-share-view {
   overflow: hidden;
 }
-
 .legacy-share-view.legacy-share-view-mobile {
   position: fixed;
 }
-
 .legacy-share-view #belowVisualization,
 .legacy-share-view .hide-source #belowVisualization {
   display: none;
 }
-
 .legacy-share-view #visualizationColumn {
   margin: 0 auto;
 }
-
 .legacy-share-view #visualizationColumn #phoneFrameScreen {
   overflow: hidden;
 }
-
 .legacy-share-view #visualizationColumn #phoneFrameScreen #visualizationContainer {
   display: inline-block;
 }
-
 .legacy-share-view #visualizationColumn #phoneFrameScreen #visualizationContainer #visualization {
   overflow: hidden;
 }
-
 .legacy-share-view #visualizationColumn.wireframeShare {
   width: 432px !important;
   height: 757px !important;
@@ -2097,7 +1946,6 @@ div.WireframeButtons_active {
   padding: 20px 0;
   overflow: hidden;
 }
-
 .legacy-share-view #visualizationColumn.wireframeShare #phoneFrameScreen {
   position: relative;
   top: 78px;
@@ -2107,27 +1955,22 @@ div.WireframeButtons_active {
   width: 400px;
   height: 600px;
 }
-
 .legacy-share-view #gameButtons {
   width: auto;
   padding: 4px 5%;
 }
-
 .legacy-share-view #gameButtons #right-button-cell {
   display: none;
   /* don't show Finish button in share view */
 }
-
 .legacy-share-view #gameButtons #soft-buttons button {
   margin: 5px 1px;
 }
-
 .legacy-share-view .small-footer-base {
   left: 0;
   right: 0;
   width: auto !important;
 }
-
 .legacy-share-view #more-menu,
 .legacy-share-view #copyright-flyout {
   border-top: solid thin #202b34;
@@ -2135,11 +1978,9 @@ div.WireframeButtons_active {
   right: 0;
   width: auto !important;
 }
-
 .legacy-share-view .full_container {
   padding: 0;
 }
-
 .legacy-share-view .admin {
   display: none;
 }
@@ -2151,9 +1992,7 @@ div.WireframeButtons_active {
 #manageAssetsModal {
   width: 800px;
   margin-left: -400px;
-}
-
-#debugResizeBar {
+}#debugResizeBar {
   width: 100%;
   height: 13px;
   line-height: 13px;
@@ -2179,11 +2018,9 @@ div.WireframeButtons_active {
   font-size: 14px;
   min-width: 120px;
 }
-
 .debugger_button:disabled {
   cursor: not-allowed;
 }
-
 .debugger_button:disabled:active {
   border: none !important;
 }
@@ -2197,7 +2034,7 @@ div.WireframeButtons_active {
   outline-style: none;
 }
 
-.debugger_button>img {
+.debugger_button > img {
   float: left;
   opacity: 1;
 }
@@ -2221,7 +2058,6 @@ div.WireframeButtons_active {
   float: left;
   border-right: 1px solid gray;
 }
-
 #debug-commands-header .fa {
   margin: 0 0.25em;
 }
@@ -2258,7 +2094,6 @@ div.WireframeButtons_active {
   width: 200px;
   overflow-y: scroll;
 }
-
 .debug-watch.no-commands {
   max-width: calc(100% - 130px);
 }
@@ -2275,12 +2110,10 @@ div.WireframeButtons_active {
   clear: both;
   margin-bottom: 1px;
 }
-
 .debug-watch-item .watch-variable,
 .debug-watch-item .watch-separator {
   color: purple;
 }
-
 .debug-watch-item .watch-unavailable {
   color: red;
 }
@@ -2290,11 +2123,9 @@ div.WireframeButtons_active {
   right: 200px;
   min-width: 130px;
 }
-
 .debug-console.no-commands {
   left: 0;
 }
-
 .debug-console.no-watch {
   right: 0;
 }
@@ -2388,7 +2219,6 @@ div.WireframeButtons_active {
   -ms-user-select: none;
   user-select: none;
 }
-
 #divApplab canvas,
 #designModeViz canvas,
 .draggingParent canvas {
@@ -2398,26 +2228,22 @@ div.WireframeButtons_active {
   left: 0;
   z-index: -1;
 }
-
 #divApplab img,
 #designModeViz img,
 .draggingParent img {
   opacity: 1;
   max-width: none;
 }
-
 #divApplab label,
 #designModeViz label,
 .draggingParent label {
   display: inline-block;
 }
-
 #divApplab div,
 #designModeViz div,
 .draggingParent div {
   overflow: hidden;
 }
-
 #divApplab div.textArea,
 #designModeViz div.textArea,
 .draggingParent div.textArea {
@@ -2426,7 +2252,6 @@ div.WireframeButtons_active {
   /* needed by Firefox */
   -moz-user-select: text;
 }
-
 #divApplab button,
 #designModeViz button,
 .draggingParent button {
@@ -2434,7 +2259,6 @@ div.WireframeButtons_active {
   margin: 2px;
   font-size: 14px;
 }
-
 #divApplab input,
 #divApplab div.textArea,
 #divApplab button,
@@ -2458,7 +2282,6 @@ div.WireframeButtons_active {
   line-height: 1.2em;
   margin: 5px;
 }
-
 #divApplab input p,
 #divApplab div.textArea p,
 #divApplab button p,
@@ -2479,7 +2302,6 @@ div.WireframeButtons_active {
 .draggingParent label p {
   line-height: inherit;
 }
-
 #divApplab .chart,
 #designModeViz .chart,
 .draggingParent .chart {
@@ -2487,13 +2309,11 @@ div.WireframeButtons_active {
   display: block;
   overflow: hidden;
 }
-
 #divApplab .chart .loading,
 #designModeViz .chart .loading,
 .draggingParent .chart .loading {
   background: url("assets/blockly/media/applab/spinner-big.gif") no-repeat center center;
 }
-
 #divApplab .design-mode-hidden,
 #designModeViz .design-mode-hidden,
 .draggingParent .design-mode-hidden {
@@ -2505,13 +2325,11 @@ div.WireframeButtons_active {
 .draggingParent canvas:not(#turtleCanvas) {
   background-color: #eee;
 }
-
 #divApplab.notRunning .chart,
 #designModeViz .chart,
 .draggingParent .chart {
   background-color: #eee;
 }
-
 #divApplab.notRunning .design-mode-hidden,
 #designModeViz .design-mode-hidden,
 .draggingParent .design-mode-hidden {
@@ -2524,28 +2342,24 @@ div.WireframeButtons_active {
 .draggingParent {
   color: #333;
 }
-
 #divApplab.appModern button,
 #designModeViz.appModern button,
 .draggingParent button {
   border: 0;
   border-radius: 0;
 }
-
 #divApplab.appModern button:hover,
 #designModeViz.appModern button:hover,
 .draggingParent button:hover {
   background-image: url("assets/blockly/media/applab/brighter.png");
   box-shadow: none;
 }
-
 #divApplab.appModern button:active,
 #designModeViz.appModern button:active,
 .draggingParent button:active {
   background-image: url("assets/blockly/media/applab/darker.png");
   border: 0 !important;
 }
-
 #divApplab.appModern input[type=text],
 #divApplab.appModern input:not([type]),
 #divApplab.appModern div.textArea,
@@ -2559,7 +2373,6 @@ div.WireframeButtons_active {
   padding: 5px;
   /* padding clips text in text inputs in Firefox */
 }
-
 #divApplab.appModern select,
 #designModeViz.appModern select,
 .draggingParent select {
@@ -2572,22 +2385,19 @@ div.WireframeButtons_active {
   background-position: right 10px center;
   background-repeat: no-repeat;
   background-size: auto 50%;
-  padding-right: 0\9;
-  background-color: transparent\9;
+  padding-right: 0\9 ;
+  background-color: transparent\9 ;
 }
-
 #divApplab.appModern select::-ms-expand,
 #designModeViz.appModern select::-ms-expand,
 .draggingParent select::-ms-expand {
   display: none;
 }
-
 #divApplab.appModern select:hover,
 #designModeViz.appModern select:hover,
 .draggingParent select:hover {
   opacity: 0.8;
 }
-
 #divApplab.appModern button,
 #divApplab.appModern select,
 #divApplab.appModern input,
@@ -2602,13 +2412,11 @@ div.WireframeButtons_active {
 .draggingParent .textArea {
   outline: 0;
 }
-
 #divApplab.appModern img[data-canonical-image-url=""],
 #designModeViz.appModern img[data-canonical-image-url=""],
 .draggingParent img[data-canonical-image-url=""] {
   display: none;
 }
-
 #divApplab.appModern .screen,
 #designModeViz.appModern .screen,
 .draggingParent .screen {
@@ -2638,20 +2446,17 @@ _:-ms-fullscreen select,
   outline: 1px solid #bdc3c7;
   outline-offset: -1px;
 }
-
 #divApplab.notRunning img[data-canonical-image-url=""],
 #designModeViz.appModern img[data-canonical-image-url=""],
 .draggingParent img[data-canonical-image-url=""] {
   display: block;
   background: #bdc3c7 url("assets/blockly/media/applab/placeholder_img.png") center center no-repeat !important;
 }
-
 #divApplab.notRunning canvas:not(#turtleCanvas),
 #designModeViz.appModern canvas:not(#turtleCanvas),
 .draggingParent canvas:not(#turtleCanvas) {
   background: #bdc3c7 url("assets/blockly/media/applab/placeholder_canvas.png") center center no-repeat;
 }
-
 #divApplab.notRunning .chart,
 #designModeViz.appModern .chart,
 .draggingParent .chart {
@@ -2671,7 +2476,7 @@ div#visualizationResizeBar {
   top: 30px;
 }
 
-#playSpaceHeader>div {
+#playSpaceHeader > div {
   height: 30px;
 }
 
@@ -2688,8 +2493,7 @@ div#visualizationResizeBar {
  * experimentally to keep about the same amount of space below the phone frame
  * throughout the responsive range.
  */
-@media screen and (min-width: 1151px),
-screen and (min-height: 849px) {
+@media screen and (min-width: 1151px), screen and (min-height: 849px) {
   div#visualization.responsive {
     max-height: 562.5px;
     max-width: 400px;
@@ -2724,15 +2528,13 @@ screen and (min-height: 849px) {
     right: 400px;
   }
 
-  div#visualization.responsive>* {
+  div#visualization.responsive > * {
     -webkit-transform: scale(1.25);
     -ms-transform: scale(1.25);
     transform: scale(1.25);
   }
 }
-
-@media screen and (min-width: 1101px) and (max-width: 1150px),
-screen and (min-height: 777px) and (max-height: 848px) {
+@media screen and (min-width: 1101px) and (max-width: 1150px), screen and (min-height: 777px) and (max-height: 848px) {
   div#visualization.responsive {
     max-height: 492.1875px;
     max-width: 350px;
@@ -2767,15 +2569,13 @@ screen and (min-height: 777px) and (max-height: 848px) {
     right: 350px;
   }
 
-  div#visualization.responsive>* {
+  div#visualization.responsive > * {
     -webkit-transform: scale(1.09375);
     -ms-transform: scale(1.09375);
     transform: scale(1.09375);
   }
 }
-
-@media screen and (min-width: 1051px) and (max-width: 1100px),
-screen and (min-height: 708px) and (max-height: 778px) {
+@media screen and (min-width: 1051px) and (max-width: 1100px), screen and (min-height: 708px) and (max-height: 778px) {
   div#visualization.responsive {
     max-height: 421.875px;
     max-width: 300px;
@@ -2810,15 +2610,13 @@ screen and (min-height: 708px) and (max-height: 778px) {
     right: 300px;
   }
 
-  div#visualization.responsive>* {
+  div#visualization.responsive > * {
     -webkit-transform: scale(0.9375);
     -ms-transform: scale(0.9375);
     transform: scale(0.9375);
   }
 }
-
-@media screen and (min-width: 1001px) and (max-width: 1050px),
-screen and (min-height: 638px) and (max-height: 707px) {
+@media screen and (min-width: 1001px) and (max-width: 1050px), screen and (min-height: 638px) and (max-height: 707px) {
   div#visualization.responsive {
     max-height: 351.5625px;
     max-width: 250px;
@@ -2853,15 +2651,13 @@ screen and (min-height: 638px) and (max-height: 707px) {
     right: 250px;
   }
 
-  div#visualization.responsive>* {
+  div#visualization.responsive > * {
     -webkit-transform: scale(0.78125);
     -ms-transform: scale(0.78125);
     transform: scale(0.78125);
   }
 }
-
-@media screen and (max-width: 1000px),
-screen and (max-height: 637px) {
+@media screen and (max-width: 1000px), screen and (max-height: 637px) {
   div#visualization.responsive {
     max-height: 281.25px;
     max-width: 200px;
@@ -2896,13 +2692,12 @@ screen and (max-height: 637px) {
     right: 200px;
   }
 
-  div#visualization.responsive>* {
+  div#visualization.responsive > * {
     -webkit-transform: scale(0.625);
     -ms-transform: scale(0.625);
     transform: scale(0.625);
   }
 }
-
 #visualizationColumn.wireframeShare {
   max-width: none !important;
   width: 352px;
@@ -2911,17 +2706,14 @@ screen and (max-height: 637px) {
   padding: 20px 0;
   background-size: initial;
 }
-
 #visualizationColumn.wireframeShare #playSpaceHeader,
 #visualizationColumn.wireframeShare #gameButtons {
   display: none;
 }
-
 #visualizationColumn.wireframeShare #phoneFrameScreen {
   width: 320px;
   height: 480px;
 }
-
 #visualizationColumn.wireframeShare #visualization {
   top: 68px;
   left: 16px;
@@ -2938,7 +2730,6 @@ screen and (max-height: 637px) {
   width: 600px;
   max-width: 600px;
 }
-
 #visualizationColumn.widgetHeight,
 #visualization.widgetHeight {
   height: 450px;
@@ -2960,9 +2751,7 @@ screen and (max-height: 637px) {
   position: relative;
   z-index: 1;
   background-color: white;
-  margin: 10px auto;
 }
-
 #divApplab label,
 #divApplab input,
 #divApplab button,
@@ -2970,12 +2759,10 @@ screen and (max-height: 637px) {
 #divApplab textarea {
   font-size: 14px;
 }
-
 #divApplab select {
   height: 30px;
   width: 220px;
 }
-
 #divApplab button,
 #divApplab input,
 #divApplab select,
@@ -2988,15 +2775,12 @@ screen and (max-height: 637px) {
   /* In design mode, show grab/grabbing cursor for all UI elements
   * so that they look draggable. */
 }
-
 #designModeViz.clip-content {
   overflow: hidden;
 }
-
 #designModeViz .screen {
   overflow: visible;
 }
-
 #designModeViz button,
 #designModeViz label,
 #designModeViz select,
@@ -3011,7 +2795,6 @@ screen and (max-height: 637px) {
   cursor: -moz-grab;
   cursor: -webkit-grab;
 }
-
 #designModeViz button:active,
 #designModeViz label:active,
 #designModeViz select:active,
@@ -3024,7 +2807,6 @@ screen and (max-height: 637px) {
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
 }
-
 #designModeViz button.toDelete,
 #designModeViz label.toDelete,
 #designModeViz select.toDelete,
@@ -3035,7 +2817,6 @@ screen and (max-height: 637px) {
 #designModeViz div[contenteditable=true].toDelete {
   opacity: 0.5;
 }
-
 #designModeViz.withCrosshair {
   cursor: crosshair;
 }
@@ -3073,7 +2854,6 @@ screen and (max-height: 637px) {
 #divApplab.notRunning.withCrosshair {
   cursor: crosshair;
 }
-
 #divApplab.notRunning.withCrosshair button,
 #divApplab.notRunning.withCrosshair label,
 #divApplab.notRunning.withCrosshair select,
@@ -3147,7 +2927,6 @@ screen and (max-height: 637px) {
   display: inline-block;
   vertical-align: top;
 }
-
 #share-cell.share-cell-none {
   display: none;
 }
@@ -3184,7 +2963,6 @@ screen and (max-height: 637px) {
   text-align: justify;
   line-height: 0;
 }
-
 .justify-contents:after {
   content: "";
   width: 100%;
@@ -3195,7 +2973,6 @@ screen and (max-height: 637px) {
   text-align: right;
   line-height: 0;
 }
-
 .rightalign-contents:after {
   content: "";
   width: 100%;
@@ -3271,16 +3048,13 @@ screen and (max-height: 637px) {
 .theme-dropdown .Select-value {
   height: 44px;
 }
-
 .theme-dropdown .Select-value .theme-dropdown-label img {
   width: 36px;
   height: 36px;
 }
-
 .theme-dropdown .Select-value-label .checkbox {
   visibility: hidden;
 }
-
 .theme-dropdown .Select-menu,
 .theme-dropdown .Select-menu-outer {
   height: 70vh;
@@ -3289,11 +3063,9 @@ screen and (max-height: 637px) {
   border-radius: 4px;
   text-align: center;
 }
-
 .theme-dropdown .Select-control {
   height: 44px;
 }
-
 .theme-dropdown .form-control .Select-arrow-zone {
   display: table-cell !important;
 }
